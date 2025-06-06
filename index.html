@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách Donater</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .donater-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 16px;
+    }
+
+    .donater-card {
+      width: 100%;
+      max-width: 350px;
+      background-color: #161b22;
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 0 15px #00ffff44;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .donater-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #00ffffaa;
+    }
+
+    .donater-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0 0 5px #ffffffcc;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .donater-amount {
+      color: #00ff99;
+      font-size: 1.05em;
+      text-shadow: 0 0 5px #00ff99aa;
+      text-align: center;
+    }
+
+    .donate-icon {
+      font-size: 1.2em;
+      margin-right: 6px;
+    }
+
+    .facebook-link {
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #00aaff;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .facebook-link:hover {
+      color: #66ccff;
+      text-shadow: 0 0 5px #66ccff;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-size: 0.95em;
+      color: #cccccc;
+      text-shadow: 0 0 5px #888;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .note span {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>🌟 Danh sách Donater 🌟</h2>
+  <h4 total>tổng: <span style="color: #00ff99;">284.000đ | dư 34.000đ</span></h4>
+  <div class="donater-list">
+    <div class="donater-card">
+      <div class="donater-name"><span class="donate-icon">🏦</span>LÊ HẢI</div>
+      <div class="donater-amount">100.000đ + 40.000đ</div>
+      <a class="facebook-link" href="https://www.facebook.com/le.hai.519766#" target="_blank">🔗 Facebook</a>
+    </div>
+    <div class="donater-card">
+      <div class="donater-name"><span class="donate-icon">🏦</span>NGUYỄN HIỂU MINH</div>
+      <div class="donater-amount">100.000đ</div>
+      <a class="facebook-link" href="https://www.facebook.com/NHieuMiinh" target="_blank">🔗 Facebook</a>
+    </div>
+    <div class="donater-card">
+      <div class="donater-name"><span class="donate-icon">🏦</span>Rồi Hết Cứu</div>
+      <div class="donater-amount">20.000đ</div>
+      <a class="facebook-link" href="https://www.facebook.com/roi.het.cuu#" target="_blank">🔗 Facebook</a>
+    </div>
+    <div class="donater-card">
+      <div class="donater-name"><span class="donate-icon">🎴</span>HAI HAI</div>
+      <div class="donater-amount">20.000đ</div>
+      <a class="facebook-link" href="https://www.facebook.com/hai.hai.42437#" target="_blank">🔗 Facebook</a>
+    </div>
+    <div class="donater-card">
+      <div class="donater-name"><span class="donate-icon">🏦</span>VĂN HÙNG</div>
+      <div class="donater-amount">10.000đ</div>
+      <a class="facebook-link" href="https://www.facebook.com/van.hung.905691#" target="_blank">🔗 Facebook</a>
+    </div>
+  </div>
+
+  <div class="note">
+    <p>🏦 là <strong>chuyển khoản</strong></p>
+    <p>🎴 là <strong>dùng thẻ</strong> — <span>-25%</span> giá trị thực</p>
+  </div>
+</body>
+</html>
